@@ -1,0 +1,172 @@
+{
+  "eda": {
+    "n_rows_raw": 50000,
+    "n_duplicates": 418,
+    "n_rows_used": 49582
+  },
+  "tfidf_params": {
+    "max_features": 5000,
+    "ngram_range": [
+      1,
+      2
+    ],
+    "min_df": 5,
+    "max_df": 0.9,
+    "sublinear_tf": true
+  },
+  "search": {
+    "cv": 3,
+    "n_iter": 6,
+    "tune_sample": 8000,
+    "best_params": {
+      "n_estimators": 300,
+      "min_samples_split": 10,
+      "max_depth": null
+    },
+    "best_cv_f1_weighted": 0.8491202854965115
+  },
+  "train_accuracy": 1.0,
+  "test_accuracy": 0.8556014923868105,
+  "report": {
+    "negative": {
+      "precision": 0.8589848546868604,
+      "recall": 0.8495951417004048,
+      "f1-score": 0.8542641970282923,
+      "support": 4940.0
+    },
+    "positive": {
+      "precision": 0.8523156430133174,
+      "recall": 0.8615631906771147,
+      "f1-score": 0.8569144684252598,
+      "support": 4977.0
+    },
+    "accuracy": 0.8556014923868105,
+    "macro avg": {
+      "precision": 0.8556502488500889,
+      "recall": 0.8555791661887597,
+      "f1-score": 0.8555893327267761,
+      "support": 9917.0
+    },
+    "weighted avg": {
+      "precision": 0.8556378075456661,
+      "recall": 0.8556014923868105,
+      "f1-score": 0.8555942767643724,
+      "support": 9917.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      4197,
+      743
+    ],
+    [
+      689,
+      4288
+    ]
+  ],
+  "top_features": [
+    {
+      "feature": "bad",
+      "importance": 0.02187093594538729,
+      "leans": "negative"
+    },
+    {
+      "feature": "worst",
+      "importance": 0.018831955181974478,
+      "leans": "negative"
+    },
+    {
+      "feature": "great",
+      "importance": 0.015342124889764766,
+      "leans": "positive"
+    },
+    {
+      "feature": "awful",
+      "importance": 0.01168245912914714,
+      "leans": "negative"
+    },
+    {
+      "feature": "waste",
+      "importance": 0.01029941930687433,
+      "leans": "negative"
+    },
+    {
+      "feature": "excellent",
+      "importance": 0.008518258464506696,
+      "leans": "positive"
+    },
+    {
+      "feature": "boring",
+      "importance": 0.008254893442561086,
+      "leans": "negative"
+    },
+    {
+      "feature": "terrible",
+      "importance": 0.00823725020314674,
+      "leans": "negative"
+    },
+    {
+      "feature": "no",
+      "importance": 0.007976624218495954,
+      "leans": "negative"
+    },
+    {
+      "feature": "nothing",
+      "importance": 0.007563379131321274,
+      "leans": "negative"
+    },
+    {
+      "feature": "stupid",
+      "importance": 0.006825095484974231,
+      "leans": "negative"
+    },
+    {
+      "feature": "poor",
+      "importance": 0.006404597631156283,
+      "leans": "negative"
+    },
+    {
+      "feature": "best",
+      "importance": 0.006187681615226899,
+      "leans": "positive"
+    },
+    {
+      "feature": "wonderful",
+      "importance": 0.005595685683931893,
+      "leans": "positive"
+    },
+    {
+      "feature": "love",
+      "importance": 0.0055089655655344814,
+      "leans": "positive"
+    },
+    {
+      "feature": "worse",
+      "importance": 0.005414031352810957,
+      "leans": "negative"
+    },
+    {
+      "feature": "horrible",
+      "importance": 0.005302058382867897,
+      "leans": "negative"
+    },
+    {
+      "feature": "even",
+      "importance": 0.005050187715528435,
+      "leans": "negative"
+    },
+    {
+      "feature": "plot",
+      "importance": 0.004946859041404949,
+      "leans": "negative"
+    },
+    {
+      "feature": "one best",
+      "importance": 0.004590600681285331,
+      "leans": "positive"
+    }
+  ],
+  "model_size_mb": 30.9,
+  "n_train": 39665,
+  "n_test": 9917
+}

@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
+# raw + cached data (66 MB raw CSV: download from Kaggle instead of committing)
+data/
+train.log
+nohup.out
+
+.venv/
+__pycache__/
+*.pyc
